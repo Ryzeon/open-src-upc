@@ -1,0 +1,3 @@
+[submodule "inncontrol-backend"]
+	path = inncontrol-backend
+	url = https://github.com/upc-pre-20241-si729-wx55-eabmodel/inncontrol-backend
