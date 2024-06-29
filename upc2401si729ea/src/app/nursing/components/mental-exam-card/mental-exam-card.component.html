@@ -1,0 +1,37 @@
+<mat-card
+  aria-label="Exam Card"
+>
+  <mat-card-header>
+    <mat-card-title>
+      {{ 'exam-id' | translate }}# {{ exam.id }}
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <img mat-card-lg-image [src]="patient.photoUrl" [alt]="patient.id" class="img-card">
+    <p>
+      <span> {{ 'patient-name' | translate }}: </span>
+      <span>{{ patient.firstName + " " + patient.lastName }}</span>
+    </p>
+    <p>
+      <span>{{ 'born-date' | translate }}: </span>
+      <span>{{ patient.birthDate | date }}</span>
+    </p>
+    <p>
+      <span>{{ 'exam-date' | translate }}: </span>
+      <span>{{ exam.examDate | date }}</span>
+    </p>
+    <p>
+      <span>{{ 'examiner-name' | translate }}: </span>
+      <span>{{ examiner.firstName + " " + examiner.lastName }}</span>
+    </p>
+    <p>
+      <span>{{ 'examiner-id' | translate }}: </span>
+      <span>{{ examiner.id }}</span>
+    </p>
+    <br>
+    <p>
+      <span>{{ 'exam-score' | translate }}: </span>
+      <span>{{ totalScore }}</span>
+    </p>
+  </mat-card-content>
+</mat-card>

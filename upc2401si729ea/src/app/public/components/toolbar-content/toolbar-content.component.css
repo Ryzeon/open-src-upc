@@ -1,0 +1,15 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+a {
+  height: 70%;
+}
+
+img {
+  height: 70%;
+}
+
+.language-switcher {
+  margin-left: 10px;
+}

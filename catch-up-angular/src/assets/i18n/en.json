@@ -1,0 +1,6 @@
+{
+  "footer": {
+    "intro": "Made  by",
+    "author": "{{ author}}"
+  }
+}

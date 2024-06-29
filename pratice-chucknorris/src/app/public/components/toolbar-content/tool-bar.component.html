@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <img ngSrc="assets/img/logo.png" alt="chuck-norris-logo" height="55" width="110" priority>
+  <span style="width: 10px"></span>
+  <h1>ChuckNorris</h1>
+  <span class="mat-space"></span>
+  <button mat-raised-button aria-label="All Jokes" (click)="getAllJokes()">
+    All Jokes
+  </button>
+</mat-toolbar>
+<app-jokes-grid [categories]="categories"></app-jokes-grid>

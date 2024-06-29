@@ -1,0 +1,18 @@
+{
+  "food-trucks": [
+    {
+      "ownerFirstName": "sds",
+      "ownerLastName": "sdsd",
+      "brandName": "sdsd",
+      "email": "alex.ramon2004@gmail.com",
+      "id": 1
+    },
+    {
+      "ownerFirstName": "sds",
+      "ownerLastName": "sds",
+      "brandName": "sdsd",
+      "email": "ola@sds",
+      "id": 2
+    }
+  ]
+}

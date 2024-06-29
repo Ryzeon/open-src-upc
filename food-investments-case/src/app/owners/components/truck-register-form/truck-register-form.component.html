@@ -1,0 +1,96 @@
+<div class="form-container">
+  <h2>Register Truck</h2>
+  <div class="form-section">
+    <form (submit)="onSubmit()" #truckForm='ngForm'>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            First Name
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field>
+          <input matInput placeholder="First Name" name="ownerFirstName" [(ngModel)]="truck.ownerFirstName" required>
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Last Name
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field>
+          <input matInput placeholder="Last Name" name="ownerLastName" [(ngModel)]="truck.ownerLastName" required>
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Food Truck or Brand
+            Name
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field>
+          <input matInput placeholder="Food Truck or Brand
+            Name" name="brandName" [(ngModel)]="truck.brandName" required>
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Email
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-form-field>
+          <input matInput placeholder="account@domain.com" name="email" [(ngModel)]="truck.email" required>
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Address
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field>
+          <input matInput placeholder="Address" name="address" [(ngModel)]="truck.address">
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Website URL
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field>
+          <input matInput placeholder="Website URL" name="websiteUrl" [(ngModel)]="truck.websiteUrl">
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Menu URL
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field>
+          <input matInput placeholder="Menu URL" name="menuUrl" [(ngModel)]="truck.menuUrl">
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <ng-container>
+        <button mat-raised-button color="primary">Create</button>
+      </ng-container>
+    </form>
+  </div>
+
+</div>

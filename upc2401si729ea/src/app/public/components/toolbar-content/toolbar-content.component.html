@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <a
+     routerLink="/"
+     aria-label="Home Link"
+  >
+    <img src="https://hign.org/sites/default/files/2022-01/HIGN-logo-1200.png" alt="HIGN Logo" class="logo" />
+  </a>
+
+  <span class="spacer"></span>
+  <a mat-button *ngFor="let route of routes"
+     [routerLink]="route.link">
+    {{  route.name  | translate }}
+  </a>
+  <span class="language-switcher">
+    <app-language-switcher/>
+  </span>
+</mat-toolbar>

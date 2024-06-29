@@ -1,0 +1,23 @@
+<mat-card class="article-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Random Joke {{ category }}</mat-card-title>
+      <mat-card-subtitle>
+        ID: {{ joke.id }}
+        <br>
+        Category: {{ category }}
+      </mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+  <img mat-card-image [src]="joke.icon_url" [alt]="joke.id">
+  <mat-card-content>
+    <p>
+      {{ joke.value }}
+    </p>
+    <mat-card-footer>
+      <p> URL:
+        <a [href]="joke.url" target="_blank"> {{ joke.url }} </a>
+      </p>
+    </mat-card-footer>
+  </mat-card-content>
+</mat-card>

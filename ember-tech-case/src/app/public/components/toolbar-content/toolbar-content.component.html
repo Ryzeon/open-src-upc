@@ -1,0 +1,6 @@
+<mat-toolbar color="primary">
+  <h1>Ember</h1>
+  <span class="spacer"></span>
+  <a mat-button *ngFor="let route of options"
+     [routerLink]="route.link">{{ route.name }}</a>
+</mat-toolbar>

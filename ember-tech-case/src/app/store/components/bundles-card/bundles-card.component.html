@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>
+        {{ bundle.title }}
+      </mat-card-title>
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    <img class="img-center" mat-card-lg-image [src]="bundle.photoUrl" [alt]="bundle.title">
+    <p>{{ bundle.description }}</p>
+    <p>Bundle Price {{ bundle.price | currency:'USD':'symbol':'1.2-2' }}</p>
+    <p>
+      You save {{ youSave | currency:'USD':'symbol':'1.2-2'}}!
+    </p>
+    <p>Rating {{ bundle.rating }}</p>
+
+  </mat-card-content>
+</mat-card>

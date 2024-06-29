@@ -1,0 +1,6 @@
+<mat-grid-list [cols]="2" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let category of categories">
+    <app-joke-card [category]="category"></app-joke-card>
+  </mat-grid-tile>
+</mat-grid-list>
+<app-footer-content/>

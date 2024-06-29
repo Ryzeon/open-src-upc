@@ -1,0 +1,11 @@
+.img-card {
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+mat-card {
+  box-shadow: black 0 0 10px 0;
+  border-radius: 10px;
+  width: 100%;
+}

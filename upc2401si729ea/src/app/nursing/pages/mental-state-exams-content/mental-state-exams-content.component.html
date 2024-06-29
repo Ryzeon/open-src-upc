@@ -1,0 +1,9 @@
+<div class="title">
+  <h1>
+    {{ 'mental-state-exams' | translate }}
+  </h1>
+</div>
+
+<div class="content-view">
+      <app-mental-exam-card  *ngFor="let exam of exams" [exam]="exam"></app-mental-exam-card>
+</div>
